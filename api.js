@@ -5,12 +5,14 @@ const compiler=require("compilex")
 const options={status:true}
 compiler.init(options)
 app.use(bodyp.json())
+
 app.use("/codemirror-5.65.14",express.static("C:/Users/opjsa/OneDrive/Desktop/codemirror/codemirror-5.65.14"))
+
 app.get("/",function(req,res){
     compiler.flush(function(){
         console.log("deleted")
     })
-    res.sendFile("C:/Users/opjsa/OneDrive/Desktop/codemirror/index.html")
+    res.sendFile(__dirname+"/index.html")
 })
 
 app.post("/compile", function (req, res) {

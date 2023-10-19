@@ -20,7 +20,7 @@
    
 <body>
     <div class="row m-3">
-        <div class="col">
+        <div class="col d-flex flex-column rounded  ">
             <div class="d-flex justify-content-between mb-2 bg-dark rounded p-2">
                 <div class="col-12 w-25">
                     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
@@ -36,18 +36,25 @@
                     <button type="button" id="run" class="btn btn-success"><i class="bi bi-play-fill"></i></button>
                 </div>
             </div>
-            <textarea type="text" id="editor" class="form-control" aria-label="First name"></textarea>
+            <textarea type="text" id="editor" class="form-control h-50" style="bottom: 2px;"  aria-label="First name"></textarea>
         </div>
-        <div class="col d-flex flex-column rounded bg-dark px-4">
-            <div class="h-50">
+        <div class="col  d-flex flex-column rounded bg-dark p-4 ">
+            <div class="h-50 px-2">
                 <label for="Input" class="text-light mt-4 mb-2">Input</label>
                 <textarea type="text" id="input" class="form-control h-75" aria-label="Last name"></textarea>
             </div>
-            <div class="h-50">
+            <div class="h-50 p-2">
                 <label for="Output" class="text-light mb-2">Output</label>
                 <textarea type="text" id="output" class="form-control h-75" aria-label="Last name"></textarea>
             </div>
+            <div class="h-50 p-2 row">
+                <label for="Output" class="text-light mb-2"> <p>choose from java , python , cpp and compile your code </p>
+                    <p> note: not for Prod </p></label>
+                
+            </div>
+           
         </div>
+        
     </div>
 </body>
     <script>
